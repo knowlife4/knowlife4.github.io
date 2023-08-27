@@ -124,24 +124,12 @@ div {
 
 .navbar-toggler.collapsed:hover {
   transform: rotate(-45deg);
-  box-shadow: -3px 3px rgb(2,20,30);
+  box-shadow: -4px 4px rgb(2,20,30);
 }
 
 .navbar-toggler:not(.collapsed):hover {
   transform: rotate(-45deg);
-  box-shadow: -3px 3px rgb(2,20,30);
-}
-
-@keyframes dial-hover {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  50% {
-    transform: rotateZ(-15deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
+  box-shadow: -4px 4px rgb(2,20,30);
 }
 
 .navbar-toggler {
@@ -159,5 +147,12 @@ div {
 
 #icon:hover {
   animation: hover .5s infinite;
+}
+
+#desc {
+  font-family: 'Anek Odia';
+  letter-spacing: .07rem;
+  line-height: 1.3rem;
+  word-spacing: .1rem;
 }
 
