@@ -46,3 +46,54 @@ h1 {
 div {
 }
 
+.btn:active:focus {
+  animation: press 0.1s forwards ease-in-out;
+}
+
+@keyframes press {
+  from {
+    transform: translateY(0px);
+    box-shadow: var(--bs-btn-focus-box-shadow);
+  }
+  to {
+    transform: translateY(5px);
+    box-shadow: inset 0px 7px rgb(27,0,0);
+    background: #431414;
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(5px);
+    box-shadow: inset 0px 7px rgb(27,0,0);
+  }
+  50% {
+    box-shadow: initial;
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0px 8px rgb(27,0,0);
+  }
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+    box-shadow: 0px 11px rgb(27,0,0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.btn:hover {
+  animation: hover 1s infinite ease-in-out;
+}
+
+.btn:focus:not(:active) {
+  animation: up .25s forwards ease-in-out;
+}
+

@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.active {
-  display: block;
-}
-
 .navigation-clean {
   background: rgba(255, 255, 255);
   padding-top: .25rem;
