@@ -97,3 +97,67 @@ div {
   animation: up .25s forwards ease-in-out;
 }
 
+@keyframes load {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.row {
+}
+
+.transition-panel {
+  transform: scaleX(0);
+  animation: load .5s forwards calc(var(--n) * 0.2s);
+}
+
+.btn {
+  transition: all .5s ease-in-out;
+}
+
+.navbar-collapse {
+  transition: all .5s ease-in-out;
+}
+
+.navbar-toggler.collapsed:hover {
+  transform: rotate(-45deg);
+  box-shadow: -3px 3px rgb(2,20,30);
+}
+
+.navbar-toggler:not(.collapsed):hover {
+  transform: rotate(-45deg);
+  box-shadow: -3px 3px rgb(2,20,30);
+}
+
+@keyframes dial-hover {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-15deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.navbar-toggler {
+  transition: all .25s;
+}
+
+.navbar-toggler:not(.collapsed) {
+  transform: rotate(-90deg);
+  box-shadow: -6px 0px 0px 0px rgb(2,20,30);
+}
+
+.navbar-toggler.collapsed {
+  box-shadow: 0px 6px 0px 0px rgb(2,20,30);
+}
+
+img:hover {
+  animation: hover .5s infinite;
+}
+
