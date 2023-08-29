@@ -122,14 +122,11 @@ div {
   transition: all .5s ease-in-out;
 }
 
-.navbar-toggler.collapsed:hover {
-  transform: rotate(-45deg);
-  box-shadow: -4px 4px rgb(2,20,30);
-}
-
-.navbar-toggler:not(.collapsed):hover {
-  transform: rotate(-45deg);
-  box-shadow: -4px 4px rgb(2,20,30);
+@media (min-width: 992px) {
+  .navbar-toggler.collapsed:hover, .navbar-toggler:not(.collapsed):hover {
+    transform: rotateZ(-45deg);
+    box-shadow: -4px 4px rgb(2,20,30);
+  }
 }
 
 .navbar-toggler {
